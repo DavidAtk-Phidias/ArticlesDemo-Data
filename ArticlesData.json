@@ -1,0 +1,76 @@
+{
+  "Articles": [
+    {
+      "ArticleID":10,
+      "Author":"Spotify",
+      "OriginalArticleURL":"https://vimeo.com/85490944",
+      "OriginalImageURL":"https://spotifylabscom.files.wordpress.com/2014/03/spotify-engineering-culture-part1.jpeg",
+      "Title":"Spotify Engineering Culture - part 1",
+      "ThumbnailImageURL":"https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F462847244_1280x800.jpg&src1=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fshare%2Fplay_icon_overlay.png",
+      "Synopsis":"An attempt to describe Spotify's engineering culture. (Remote data, WKWebView).",
+      "Description":"",
+      "MediaURL":"https://player.vimeo.com/video/85490944",
+      "ArticleDate":"30/01/2014"
+    },
+    {
+      "ArticleID":20,
+      "Author":"Spotify",
+      "OriginalArticleURL":"https://vimeo.com/94950270",
+      "OriginalImageURL":"https://spotifylabscom.files.wordpress.com/2014/09/spotify-engineering-culture-part2.jpeg",
+      "Title":"Spotify Engineering Culture - part 2",
+      "ThumbnailImageURL":"https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F474956755_1280x800.jpg&src1=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fshare%2Fplay_icon_overlay.png",
+      "Synopsis":"An attempt to describe Spotify's engineering culture. (Remote data, WKWebView).",
+      "Description":"",
+      "MediaURL":"https://player.vimeo.com/video/94950270",
+      "ArticleDate":"30/01/2014"
+    },
+    {
+      "ArticleID":30,
+      "Author":"Matt",
+      "OriginalArticleURL":"https://nshipster.com/equality/",
+      "OriginalImageURL":"https://nshipster.com/logo.png",
+      "Title":"Equality - Objective C",
+      "ThumbnailImageURL":"https://nshipster.com/logo.png",
+      "Synopsis":"Equality of objects in Objective C. (Remote data, WKWebView).",
+      "Description":"",
+      "MediaURL":"https://nshipster.com/equality/",
+      "ArticleDate":"15/08/2018"
+    },
+    {
+      "ArticleID":40,
+      "Author":"Matt",
+      "OriginalArticleURL":"https://nshipster.com/equatable-and-comparable/",
+      "OriginalImageURL":"https://nshipster.com/logo.png",
+      "Title":"Equality - Swift",
+      "ThumbnailImageURL":"https://nshipster.com/logo.png",
+      "Synopsis":"Equality of objects in Swift. (Remote data, WKWebView).",
+      "Description":"",
+      "MediaURL":"https://nshipster.com/equatable-and-comparable/",
+      "ArticleDate":"19/12/2018"
+    },
+    {
+      "ArticleID":50,
+      "Author":"Ari Grant (Edited for Demo)",
+      "OriginalArticleURL":"https://www.objc.io/issues/19-debugging/lldb-debugging/",
+      "OriginalImageURL":"https://www.objc.io/images/issue-19/Image_2014-11-20_at_10.09.38_PM-ccd9e8db.png",
+      "Title":"Dancing in the Debugger — A Waltz with LLDB",
+      "ThumbnailImageURL":"https://www.objc.io/images/issue-19/Image_2014-11-20_at_10.09.38_PM-ccd9e8db.png",
+      "Synopsis":"Tips on using XCode's debugger - LLDB. (Local data, custom view)",
+      "Description":"<p>Have you ever been stuck trying to understand your code and logged the contents of a variable?</p><div></div><p>Objective C</p><p>NSLog(@\"%@\", whatIsInsideThisThing);</p><div></div><p>Or skipped a function call to simplify the behavior of the program?</p><div></div><p>Objective C</p><p>NSNumber *n = @7; // theFunctionThatShouldReallyBeCalled()</p><div></div><p>Or short-circuited a logical check?</p><div></div><p>Objective C</p><p>if (1 || theBooleanAtStake) { ... }</p><div></div><p>And had to recompile, and start over each time?</p><div></div><p>Building software is complicated and bugs will always appear. A common fix cycle is to modify the code, compile, run again, and wish for the best.</p><div></div><p>It doesn’t have to be that way. You can use the debugger! And even if you already know how to inspect values, there is a lot more it is capable of.</p><div></div><p>This article intends to challenge your knowledge of debugging, explain the basics in a bit more detail than you likely know, and then show you a collection of fun examples. Let’s take it for a spin and see where we end up.</p><div></div><h2>LLDB</h2><p>LLDB is an open-source debugger that features a REPL, along with C++ and Python plugins. It comes bundled inside Xcode and lives in the console at the bottom of the window. A debugger allows you to pause a program at a specific moment of its execution, inspect the values of variables, execute custom instructions, and then manipulate the advancement of the program as you see fit. (Here is one explanation of how debuggers work in general.)</p><div></div><p>It’s likely that you have used a debugger before, even if only in Xcode’s UI to add breakpoints. But with a few tricks, there are some pretty cool things that you can do. The GDB to LLDB reference is a great bird’s-eye view of the available commands, and you might also want to install Chisel, an open-source collection of LLDB plugins that make debugging even more fun!</p><div></div><p>In the meantime, let’s begin our journey and start with how to print variables in the debugger.</p><div></div><h2>The Basics</h2><p>On adding a breakpoint to the code, the program will pause its execution at that line and the console will open, allowing us to interact with the debugger. What shall we type?</p><div></div><h2>help</h2><p>The easiest command to try is help, which will list all the commands. And if you ever forget what a command does or want to know more, then you can read all the details with help <command>, e.g. help print or help thread. If you ever forget what the help command does, then you can try help help, but if you know enough to do that, then maybe you haven’t entirely forgotten what the command does after all. 😛</p><div></div><h2>print</h2><p>Printing values is easy; just try the print command</p><div></div><p>LLDB actually does prefix matching, so you would be fine to try prin, pri, or p. You can’t use pr, since LLDB can’t disambiguate it from the process command (luckily for us, p has been disambiguated).</p><div></div><h2>Example</h2><p>(lldb) print count</p><p>(NSUinteger) $0 = 99</p><p>(lldb)</p><div></div><p>You’ll also notice that the result has a $0 in it. You can actually use this to reference the result! Try print $0 + 7 and you’ll see 106. Anything starting with a dollar sign is in LLDB’s namespace and exists to help you.</p><div></div><h2>expression</h2><p>What if you want to modify a value? Modify, you say? Yes, modify! That’s where the handy expression command comes E.G.</p><p>(lldb) expression count = 42</p><p>(NSUInteger) $4 = 42</p><p>(lldb) print count</p><p>(NSUInteger) $5 = 42</p><p>This doesn’t just modify the value in the debugger. It actually modifies the value in the program! If you resume the program at this point, it will print 42 red balloons. Magic.</p><div></div><p>Note that from now on, we will be lazy with the number of characters, and replace print and expression with p and e, respectively.</p><div></div><h2>What is the print Command?</h2><p>Here’s a fun expression to consider: p count = 18. If we execute that command and then print the contents of count, we’ll see that it behaves exactly as if we had run expression count = 18.</p><div></div><p>The difference is that the print command takes no arguments, unlike the expression command. Consider e -h +17. It is not clear if it means to execute +17 as input, only with the -h flag, or if it intends to compute the difference between 17 and h. It finds that hyphen quite confusing indeed; you may not get the result that you like.</p><div></div><p>Luckily, the solution is quite simple. Use -- to signify the end of the flags and the beginning of the input. Then if you want the -h flag, you would do e -h -- +17, and if you want the difference, you would do e -- -h +17. Since passing no flags is quite common, there is an alias for e --. It is called print.</p><div></div><p>If you type help print and scroll all the way down, it will say:</p><p>'print' is an abbreviation for 'expression --'.</p><div></div><h2>Printing Objects</h2><p>If we try</p><p>p objects</p><p>then the output is a bit verbose:</p><p>(NSString *) $7 = 0x0000000104da4040 @\"red balloons\"</p><div></div><p>It’s even worse if we try to print a more complex structure:</p><p>(lldb) p @[ @\"foo\", @\"bar\" ]</p><p>(NSArray *) $8 = 0x00007fdb9b71b3e0 @\"2 objects\"</p><div></div><p>Really, we want to see the description method of the object. (Edit: NSObject's debugDescription method can be overriden to produce a customised description). We need to tell the expression command to print the result as an object, using the -O flag (that’s an \"oh\"):</p><p>(lldb) e -O -- $8</p><p><__NSArrayI 0x7fdb9b71b3e0>(</p><p>foo,</p><p>bar</p><p>)</p><div></div><p>Luckily, e -O -- is aliased as po (for print object), and we can just use that:</p><p>(lldb) po $8</p><p><__NSArrayI 0x7fdb9b71b3e0>(</p><p>foo,</p><p>bar</p><p>)</p><p>(lldb) po @\"lunar\"</p><p>lunar</p><p>(lldb) p @\"lunar\"</p><p>(NSString *) $13 = 0x00007fdb9d0003b0 @\"lunar\"</p>",
+      "MediaURL":"",
+      "ArticleDate":"01/12/2014"
+    },
+    {
+      "ArticleID":60,
+      "Author":"Apple",
+      "OriginalArticleURL":"https://developer.apple.com/design/adaptivity/",
+      "OriginalImageURL":"https://devimages-cdn.apple.com/wwdc-services/images/2/552/552_wide_250x141_2x.jpg",
+      "Title":"Excerpt from the Mysteries of Auto Layout, Part 1.",
+      "ThumbnailImageURL":"https://devimages-cdn.apple.com/wwdc-services/images/2/552/552_wide_250x141_2x.jpg",
+      "Synopsis":"Unravelling the mysteries of Auto Layout - Part 1. (Local data, AVPlayer).",
+      "Description":"",
+      "MediaURL":"TrimmedMALP-1.mp4",
+      "ArticleDate":"01/09/2015"
+    }
+  ]
+}
