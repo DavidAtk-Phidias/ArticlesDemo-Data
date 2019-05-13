@@ -38,5 +38,38 @@
       "DRIVETHR",
       "BF"
     ]
+  },
+  {
+    "id": 1111,
+    "name": "Gusto Italiano",
+    "address": "263 Ponsonby Road, Ponsonby, Auckland",
+    "latitude": -36.84894430,
+    "longitude": 174.74420420,
+    "distance": 2,
+    "featureList": [
+      "TABLE_DELIVERY","FREE_WATER","ALCOHOL_LICENSE"
+    ]
+  },
+  {
+    "id": 2222,
+    "name": "Cibo",
+    "address": "91 St Georges Bay Road, Parnell, Auckland",
+    "latitude": -36.85231670,
+    "longitude": 174.78272290,
+    "distance": 1,
+    "featureList": [
+      "TABLE_DELIVERY","COURT_YARD_SEATING","ALCOHOL_LICENSE"
+    ]
+  },
+  {
+    "id": 3333,
+    "name": "Falls Cafe & Restaurant",
+    "address": "22 Alderman Drive, Henderson, Auckland",
+    "latitude": -36.876841057024,
+    "longitude": 174.5338424463,
+    "distance": 17,
+    "featureList": [
+      "TABLE_DELIVERY","ALCOHOL_LICENSE","PARKING"
+    ]
   }]
 }
