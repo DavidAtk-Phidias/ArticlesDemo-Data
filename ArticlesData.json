@@ -19,7 +19,7 @@
       "OriginalImageURL":"https://devimages-cdn.apple.com/wwdc-services/images/3055294D-836B-4513-B7B0-0BC5666246B0/9944/9944_wide_250x141_2x.jpg",
       "Title":"What's new in Swift",
       "ThumbnailImageURL":"https://devimages-cdn.apple.com/wwdc-services/images/3055294D-836B-4513-B7B0-0BC5666246B0/9944/9944_wide_250x141_2x.jpg",
-      "Synopsis":"Join us for an update on Swift. (Remote data, WKWebView).",
+      "Synopsis":"An update on Swift. (Remote data, WKWebView).",
       "Description":"",
       "MediaURL":"https://developer.apple.com/videos/play/wwdc2025/245/",
       "ArticleDate":"09/06/2025"
@@ -31,7 +31,7 @@
       "OriginalImageURL":"https://devimages-cdn.apple.com/wwdc-services/images/3055294D-836B-4513-B7B0-0BC5666246B0/9948/9948_wide_250x141_2x.jpg",
       "Title":"Embracing Swift concurrency",
       "ThumbnailImageURL":"https://devimages-cdn.apple.com/wwdc-services/images/3055294D-836B-4513-B7B0-0BC5666246B0/9948/9948_wide_250x141_2x.jpg",
-      "Synopsis":"The steps you need to take an app through from single-threaded to concurrent. (Remote data, WKWebView).",
+      "Synopsis":"Taking an app from single-threaded to concurrent. (Remote data, WKWebView).",
       "Description":"",
       "MediaURL":"https://developer.apple.com/videos/play/wwdc2025/268/",
       "ArticleDate":"09/06/2025"
