@@ -7,22 +7,34 @@
       "OriginalImageURL":"https://devimages-cdn.apple.com/wwdc-services/images/3055294D-836B-4513-B7B0-0BC5666246B0/9947/9947_wide_250x141_2x.jpg",
       "Title":"What's new in Xcode 26",
       "ThumbnailImageURL":"https://devimages-cdn.apple.com/wwdc-services/images/3055294D-836B-4513-B7B0-0BC5666246B0/9947/9947_wide_250x141_2x.jpg",
-      "Synopsis":"An overview of what's new in Xcode 26 (Remote data, WKWebView).",
+      "Synopsis":"Discover the latest productivity and performance advancements in Xcode 26. (Remote data, WKWebView).",
       "Description":"",
       "MediaURL":"https://developer.apple.com/videos/play/wwdc2025/247/",
       "ArticleDate":"09/06/2025"
     },
     {
       "ArticleID":20,
-      "Author":"Spotify",
-      "OriginalArticleURL":"https://vimeo.com/94950270",
-      "OriginalImageURL":"https://spotifylabscom.files.wordpress.com/2014/09/spotify-engineering-culture-part2.jpeg",
-      "Title":"Spotify Engineering Culture - part 2",
-      "ThumbnailImageURL":"https://i.vimeocdn.com/filter/overlay?src0=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F474956755_1280x800.jpg&src1=https%3A%2F%2Ff.vimeocdn.com%2Fimages_v6%2Fshare%2Fplay_icon_overlay.png",
-      "Synopsis":"An attempt to describe Spotify's engineering culture. (Remote data, WKWebView).",
+      "Author":"Apple",
+      "OriginalArticleURL":"https://developer.apple.com/videos/play/wwdc2025/245/",
+      "OriginalImageURL":"https://devimages-cdn.apple.com/wwdc-services/images/3055294D-836B-4513-B7B0-0BC5666246B0/9944/9944_wide_250x141_2x.jpg",
+      "Title":"What's new in Swift",
+      "ThumbnailImageURL":"https://devimages-cdn.apple.com/wwdc-services/images/3055294D-836B-4513-B7B0-0BC5666246B0/9944/9944_wide_250x141_2x.jpg",
+      "Synopsis":"Join us for an update on Swift. (Remote data, WKWebView).",
       "Description":"",
-      "MediaURL":"https://player.vimeo.com/video/94950270",
-      "ArticleDate":"30/01/2014"
+      "MediaURL":"https://developer.apple.com/videos/play/wwdc2025/245/",
+      "ArticleDate":"09/06/2025"
+    },
+    {
+      "ArticleID":25,
+      "Author":"Apple",
+      "OriginalArticleURL":"https://developer.apple.com/videos/play/wwdc2025/268/",
+      "OriginalImageURL":"https://devimages-cdn.apple.com/wwdc-services/images/3055294D-836B-4513-B7B0-0BC5666246B0/9948/9948_wide_250x141_2x.jpg",
+      "Title":"Embracing Swift concurrency",
+      "ThumbnailImageURL":"https://devimages-cdn.apple.com/wwdc-services/images/3055294D-836B-4513-B7B0-0BC5666246B0/9948/9948_wide_250x141_2x.jpg",
+      "Synopsis":"The steps you need to take an app through from single-threaded to concurrent. (Remote data, WKWebView).",
+      "Description":"",
+      "MediaURL":"https://developer.apple.com/videos/play/wwdc2025/268/",
+      "ArticleDate":"09/06/2025"
     },
     {
       "ArticleID":30,
